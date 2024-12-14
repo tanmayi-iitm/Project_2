@@ -26,7 +26,7 @@ if not os.path.exists(csv_file):
     sys.exit(1)
 
 # Load the dataset
-data = pd.read_csv(csv_file)
+data = pd.read_csv(csv_file, encoding='latin-1')
 
 # Perform exploratory data analysis
 def analyze_dataset(df):
